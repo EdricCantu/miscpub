@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body{text-align: center}
+    /*****************/
+    .wideFlex{display: flex;justify-content: space-between}
+    .wideFlex > *{flex-grow: 0;flex-shrink: 0}
+    /****************/
+    .centerFlex{display: flex}
+    .centerFlex > *{flex-grow: 1}
+    /****************/
+    .distFlex{display: flex;justify-content:space-between}
+    .distFlex > *{flex-grow: 1}
+    .distFlex:before, .distFlex:after{flex-grow: 0.5;content: ""}
+    /********************/
+  </style>
+  </head><body>
+  <div class="wideFlex">
+    <div>Child 1</div>
+    <div>Child 2</div>
+    <div>Child 3</div>
+  </div>
+  <div class="centerFlex">
+    <div>Child 1</div>
+    <div>Child 2</div>
+    <div>Child 3</div>
+  </div>
+  <div class="distFlex">
+    <div>Child 1</div>
+    <div>Child 2</div>
+    <div>Child 3</div>
+  </div>
+</body></html>
